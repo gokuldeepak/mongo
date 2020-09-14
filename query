@@ -1,0 +1,2 @@
+#for distinct values
+db.collection_name.distinct('column_name')
