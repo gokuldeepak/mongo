@@ -18,3 +18,11 @@ db.products.insert(
    ]
 )
 
+#update single row
+db.products.update (
+  {productId:"111"},{$set: {stocks:"1000"}}
+  )
+  
+#update multiple row
+db.products.updateMany({productName:"Brush"},{$set: {stocks: "400"}})
+
