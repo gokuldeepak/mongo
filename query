@@ -4,3 +4,17 @@ db.collection_name.distinct('column_name')
 #count
 db.collection_name.count(query)
 db.collection.find(query).count() 
+
+
+#insert
+db.products.insert( { _id: 10, item: "box", qty: 20 } )
+
+#insert multiple values
+db.products.insert(
+   [
+     { _id: 11, item: "pencil", qty: 50, type: "no.2" },
+     { item: "pen", qty: 20 },
+     { item: "eraser", qty: 25 }
+   ]
+)
+
