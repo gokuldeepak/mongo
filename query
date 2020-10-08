@@ -1,2 +1,6 @@
 #for distinct values
 db.collection_name.distinct('column_name')
+
+#count
+db.collection_name.count(query)
+db.collection.find(query).count() 
